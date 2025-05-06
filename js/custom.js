@@ -298,6 +298,7 @@
 			$(this).addClass('active');
 			
 			var data = $(this).attr('data-filter');
+			console.log("Filter applied:", data); // Debugging line
 			$grid.isotope({
 				filter: data
 			});
@@ -305,25 +306,24 @@
 	
 		if (document.getElementById("section-portfolio")) {
 			var $grid = $(".grid").isotope({
-				itemSelector: ".single-portfolio", // Updated from ".all" to ".single-portfolio"
+				itemSelector: ".single-portfolio",
 				percentPosition: true,
 				masonry: {
-					columnWidth: ".single-portfolio" // Updated from ".all" to ".single-portfolio"
+					columnWidth: ".single-portfolio"
 				}
 			});
+			console.log("Isotope initialized"); // Debugging line
 		}
-	};
+	}; // <-- Closing brace for portfolioMasonry function
 
-
-	$(function(){
-
+	$(function() {
 		OnePageNav();
 		offCanvasNav();
 		contentWayPoint();
 		navbarState();
 		clickMenu();
 		smoothScroll();
-		portfolioMasonry();
+		portfolioMasonry(); // Call the portfolioMasonry function
 	});
 
 	
