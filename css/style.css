@@ -318,21 +318,35 @@ a {
   font-size: 18px; }
 
 .filters {
-  text-align: center; }
+  text-align: center;
+  position: relative; /* Ensure it can have a z-index */
+  z-index: 1; /* Set a high z-index to bring it above other elements */
+  /* background-color: rgba(255, 255, 255, 0.8); Optional: Add a semi-transparent background */
+  padding: 10px; /* Optional: Add some padding for better visibility */
+}
   .filters ul {
     padding: 0;
-    margin: 0 0 30px 0; }
+    margin: 0 0 30px 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
     .filters ul li {
       display: inline-block;
       cursor: pointer;
       padding: 20px;
       -webkit-transition: .3s all ease;
       -o-transition: .3s all ease;
-      transition: .3s all ease; }
+      transition: .3s all ease;
+      margin: 0 10px;
+      font-weight: bold;
+      color: #ffffff;
+    }
       .filters ul li:hover {
         color: #bac964; }
       .filters ul li.active {
-        color: #bac964; }
+        color: #007bff; /* Highlight the active filter */
+      }
 
 .single-portfolio {
   margin-bottom: 50px;
