@@ -4,7 +4,7 @@ import { ArrowDown } from 'lucide-react'
 import Badge from '../shared/Badge'
 import Button from '../shared/Button'
 
-const titles = ['Product Manager', 'Engineering Leader', 'Builder of Things That Matter']
+const titles = ['Associate Product Manager', 'Engineering Leader', 'Builder of Things That Matter']
 
 export default function Hero() {
   const [titleIndex, setTitleIndex] = useState(0)
@@ -49,8 +49,8 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.5 }}
         >
-          <Badge variant="default" className="mb-8 text-xs tracking-[0.15em]">
-            Penn State '25 &nbsp;|&nbsp; Product & Engineering
+          <Badge variant="default" className="mb-10 text-xs tracking-[0.15em]">
+            CAPM&reg; &nbsp;|&nbsp; M.Eng Penn State '25
           </Badge>
         </motion.div>
 
@@ -58,7 +58,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-text-primary mb-6"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading text-text-primary mb-8"
         >
           Aayush Kumar Singh
         </motion.h1>
@@ -67,7 +67,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
-          className="h-10 md:h-12 flex items-center justify-center mb-10"
+          className="h-10 md:h-12 flex items-center justify-center mb-14"
         >
           <AnimatePresence mode="wait">
             <motion.span
@@ -87,7 +87,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 0.5 }}
-          className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-center justify-center gap-5"
         >
           <Button href="#portfolio" onClick={handleScroll('#portfolio')}>
             View My Work

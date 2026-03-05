@@ -20,17 +20,17 @@ function EducationCard({ item, index }: { item: typeof education[0]; index: numb
           <div className="absolute left-[7px] top-5 bottom-0 w-[2px] bg-border" />
         )}
 
-        <div className="bg-bg-secondary rounded-xl p-6 border border-border hover:border-accent/30 transition-colors">
-          <div className="flex items-center gap-2 mb-2">
+        <div className="bg-bg-secondary rounded-xl p-7 border border-border hover:border-accent/30 transition-colors">
+          <div className="flex items-center gap-2 mb-3">
             <GraduationCap size={16} className="text-accent" />
             <span className="text-xs font-medium tracking-[0.1em] uppercase text-accent font-heading">
               {item.duration}
             </span>
           </div>
-          <h3 className="text-lg font-semibold font-heading text-text-primary mb-1">
+          <h3 className="text-lg font-semibold font-heading text-text-primary mb-1.5">
             {item.degree}
           </h3>
-          <p className="text-text-secondary text-sm mb-4">{item.institution}</p>
+          <p className="text-text-secondary text-sm mb-5">{item.institution}</p>
 
           <button
             onClick={() => setShowCourses(!showCourses)}
@@ -71,18 +71,18 @@ function ExperienceCard({ item, index }: { item: typeof workExperience[0]; index
           <div className="absolute left-[7px] top-5 bottom-0 w-[2px] bg-border" />
         )}
 
-        <div className="bg-bg-secondary rounded-xl p-6 border border-border hover:border-accent/30 transition-colors">
-          <div className="flex items-center gap-2 mb-2">
+        <div className="bg-bg-secondary rounded-xl p-7 border border-border hover:border-accent/30 transition-colors">
+          <div className="flex items-center gap-2 mb-3">
             <Building2 size={16} className="text-accent" />
             <span className="text-xs font-medium tracking-[0.1em] uppercase text-accent font-heading">
               {item.duration}
             </span>
           </div>
-          <h3 className="text-lg font-semibold font-heading text-text-primary mb-1">
+          <h3 className="text-lg font-semibold font-heading text-text-primary mb-1.5">
             {item.title}
           </h3>
-          <p className="text-text-secondary text-sm mb-3">{item.company}</p>
-          <p className="text-text-secondary text-sm leading-relaxed">{item.description}</p>
+          <p className="text-text-secondary text-sm mb-4">{item.company}</p>
+          <p className="text-text-secondary text-sm leading-[1.8]">{item.description}</p>
         </div>
       </div>
     </AnimatedElement>
@@ -94,7 +94,7 @@ export default function Resume() {
     <Section id="resume">
       <SectionHeading label="Experience" title="Education & Career" />
 
-      <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
         {/* Education */}
         <div>
           <h3 className="text-sm font-medium tracking-[0.15em] uppercase text-text-secondary mb-8 flex items-center gap-2">

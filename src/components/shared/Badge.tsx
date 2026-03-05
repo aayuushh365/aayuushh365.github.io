@@ -13,7 +13,7 @@ const variants = {
 export default function Badge({ children, variant = 'default', className = '' }: BadgeProps) {
   return (
     <span
-      className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium tracking-wide ${variants[variant]} ${className}`}
+      className={`inline-flex items-center px-3.5 py-1.5 rounded-full text-xs font-medium tracking-wide ${variants[variant]} ${className}`}
     >
       {children}
     </span>

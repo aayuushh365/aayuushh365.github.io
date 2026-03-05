@@ -56,7 +56,7 @@ export default function Navbar() {
             <a
               href="/images/resume.pdf"
               download="Resume_Aayush_Kumar_Singh.pdf"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-medium tracking-wide border border-border text-text-secondary hover:border-accent hover:text-accent transition-all"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-xs font-semibold tracking-wide border-2 border-border text-text-secondary hover:border-accent hover:text-accent transition-all"
             >
               <Download size={14} />
               Resume
@@ -109,7 +109,7 @@ export default function Navbar() {
                 initial={{ opacity: 0, x: 30 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: navItems.length * 0.05, duration: 0.3 }}
-                className="inline-flex items-center gap-2 px-6 py-3 mt-4 rounded-xl text-sm font-medium border border-border text-text-secondary hover:border-accent hover:text-accent transition-all"
+                className="inline-flex items-center gap-2 px-7 py-3.5 mt-6 rounded-xl text-sm font-semibold border-2 border-border text-text-secondary hover:border-accent hover:text-accent transition-all"
               >
                 <Download size={16} />
                 Download Resume

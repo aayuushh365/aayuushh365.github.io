@@ -33,14 +33,14 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary/60 to-transparent md:bg-gradient-to-r" />
             </div>
-            <div className="p-6 md:p-8 flex flex-col justify-center">
-              <Badge variant="filled" className="mb-3 self-start">
+            <div className="p-7 md:p-9 flex flex-col justify-center">
+              <Badge variant="filled" className="mb-4 self-start">
                 {project.subcategory}
               </Badge>
-              <h3 className="text-xl font-semibold font-heading text-text-primary mb-3">
+              <h3 className="text-xl font-semibold font-heading text-text-primary mb-4">
                 {project.title}
               </h3>
-              <p className="text-text-secondary text-sm leading-relaxed mb-4">
+              <p className="text-text-secondary text-sm leading-relaxed mb-5">
                 {project.description}
               </p>
               <div className="flex flex-wrap gap-2">
@@ -62,14 +62,14 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary/80 to-transparent" />
             </div>
-            <div className="p-6">
-              <Badge variant="filled" className="mb-3">
+            <div className="p-7">
+              <Badge variant="filled" className="mb-4">
                 {project.subcategory}
               </Badge>
-              <h3 className="text-lg font-semibold font-heading text-text-primary mb-2">
+              <h3 className="text-lg font-semibold font-heading text-text-primary mb-3">
                 {project.title}
               </h3>
-              <div className="flex flex-wrap gap-1.5 mt-3">
+              <div className="flex flex-wrap gap-2 mt-4">
                 {project.tags.slice(0, 3).map((tag) => (
                   <Badge key={tag}>{tag}</Badge>
                 ))}
