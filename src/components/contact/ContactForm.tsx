@@ -5,7 +5,7 @@ import Button from '../shared/Button'
 
 type FormStatus = 'idle' | 'submitting' | 'success' | 'error'
 
-const WEB3FORMS_KEY = 'YOUR_ACCESS_KEY_HERE'
+const WEB3FORMS_KEY = '65f676e1-556c-4a52-9604-3add6934561b'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
