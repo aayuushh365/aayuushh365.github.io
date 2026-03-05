@@ -4,11 +4,11 @@ import { socialLinks } from '../../data/social'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border py-12">
+    <footer className="border-t border-border py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-8">
           {/* Social links */}
-          <div className="flex gap-4">
+          <div className="flex gap-5">
             {socialLinks.map((link) => {
               const iconMap: Record<string, LucideIcon> = { Github, Linkedin, BookOpen, Youtube, Instagram }
               const Icon = iconMap[link.icon]

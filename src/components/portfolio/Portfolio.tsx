@@ -33,12 +33,12 @@ export default function Portfolio() {
       />
 
       {/* Filter bar */}
-      <div className="flex flex-wrap justify-center gap-2 mb-12">
+      <div className="flex flex-wrap justify-center gap-3 mb-16">
         {filters.map((f) => (
           <button
             key={f.value}
             onClick={() => setActiveFilter(f.value)}
-            className={`relative px-5 py-2 rounded-full text-sm font-medium transition-colors cursor-pointer ${
+            className={`relative px-6 py-2.5 rounded-full text-sm font-medium transition-colors cursor-pointer ${
               activeFilter === f.value
                 ? 'text-white'
                 : 'text-text-secondary hover:text-text-primary'
@@ -57,7 +57,7 @@ export default function Portfolio() {
       </div>
 
       {/* Project grid */}
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <AnimatePresence mode="popLayout">
           {filtered.map((project) => (
             <ProjectCard

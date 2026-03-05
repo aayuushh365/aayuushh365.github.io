@@ -28,7 +28,7 @@ export default function Blog() {
       />
 
       {loading && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {Array.from({ length: 6 }).map((_, i) => (
             <SkeletonCard key={i} />
           ))}
@@ -50,14 +50,14 @@ export default function Blog() {
       )}
 
       {!loading && !error && (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.map((post, i) => (
             <AnimatedElement key={post.link} delay={i * 0.05}>
               <a
                 href={post.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block h-full bg-bg-secondary rounded-xl p-6 border border-border hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 group"
+                className="block h-full bg-bg-secondary rounded-xl p-7 border border-border hover:border-accent/30 transition-all duration-300 hover:-translate-y-1 group"
               >
                 <time className="text-xs font-medium tracking-wide text-text-secondary">
                   {new Date(post.pubDate).toLocaleDateString('en-US', {
@@ -81,7 +81,7 @@ export default function Blog() {
         </div>
       )}
 
-      <AnimatedElement className="text-center mt-12">
+      <AnimatedElement className="text-center mt-16">
         <a
           href="https://medium.com/@aayushsingh365"
           target="_blank"

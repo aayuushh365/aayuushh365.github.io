@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: 'Location',
-    value: 'State College, PA',
+    value: 'New York, NY',
     href: undefined,
   },
 ]
@@ -36,7 +36,7 @@ export default function Contact() {
         description="Have a project in mind, a question, or just want to connect? Reach out."
       />
 
-      <div className="grid md:grid-cols-5 gap-12 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-5 gap-16 max-w-5xl mx-auto">
         {/* Form */}
         <AnimatedElement className="md:col-span-3">
           <ContactForm />
