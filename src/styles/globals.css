@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: #0A0A0F;
+  --color-bg-secondary: #12121A;
+  --color-bg-tertiary: #1A1A25;
+  --color-border: #2A2A3A;
+  --color-text-primary: #F0F0F5;
+  --color-text-secondary: #8888A0;
+  --color-accent: #6366F1;
+  --color-accent-hover: #818CF8;
+  --color-accent-glow: rgba(99, 102, 241, 0.15);
+  --color-gradient-start: #6366F1;
+  --color-gradient-end: #8B5CF6;
+  --color-success: #34D399;
+
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter Variable', 'Inter', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-secondary);
+}
+
+/* Hero gradient mesh animations */
+@keyframes mesh-1 {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(10%, -10%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+@keyframes mesh-2 {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(-15%, 8%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+@keyframes mesh-3 {
+  0% { transform: translate(0%, 0%); }
+  50% { transform: translate(8%, 12%); }
+  100% { transform: translate(0%, 0%); }
+}
+
+.animate-mesh-1 { animation: mesh-1 20s ease-in-out infinite; }
+.animate-mesh-2 { animation: mesh-2 25s ease-in-out infinite; }
+.animate-mesh-3 { animation: mesh-3 18s ease-in-out infinite; }
