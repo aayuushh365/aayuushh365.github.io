@@ -12,7 +12,7 @@ function EducationCard({ item, index }: { item: typeof education[0]; index: numb
 
   return (
     <AnimatedElement delay={index * 0.1} direction="left">
-      <div className="relative pl-8 pb-12 last:pb-0">
+      <div className="relative pl-10 pb-16 last:pb-0">
         {/* Timeline dot */}
         <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 border-accent bg-bg-primary z-10" />
         {/* Connector line */}
@@ -20,7 +20,7 @@ function EducationCard({ item, index }: { item: typeof education[0]; index: numb
           <div className="absolute left-[7px] top-5 bottom-0 w-[2px] bg-border" />
         )}
 
-        <div className="bg-bg-secondary rounded-xl p-7 border border-border hover:border-accent/30 transition-colors">
+        <div className="bg-bg-secondary rounded-xl p-8 lg:p-10 border border-border hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-2 mb-3">
             <GraduationCap size={16} className="text-accent" />
             <span className="text-xs font-medium tracking-[0.1em] uppercase text-accent font-heading">
@@ -63,7 +63,7 @@ function EducationCard({ item, index }: { item: typeof education[0]; index: numb
 function ExperienceCard({ item, index }: { item: typeof workExperience[0]; index: number }) {
   return (
     <AnimatedElement delay={index * 0.1} direction="right">
-      <div className="relative pl-8 pb-12 last:pb-0">
+      <div className="relative pl-10 pb-16 last:pb-0">
         {/* Timeline dot */}
         <div className="absolute left-0 top-1 w-4 h-4 rounded-full border-2 border-accent bg-bg-primary z-10" />
         {/* Connector line */}
@@ -71,7 +71,7 @@ function ExperienceCard({ item, index }: { item: typeof workExperience[0]; index
           <div className="absolute left-[7px] top-5 bottom-0 w-[2px] bg-border" />
         )}
 
-        <div className="bg-bg-secondary rounded-xl p-7 border border-border hover:border-accent/30 transition-colors">
+        <div className="bg-bg-secondary rounded-xl p-8 lg:p-10 border border-border hover:border-accent/30 transition-colors">
           <div className="flex items-center gap-2 mb-3">
             <Building2 size={16} className="text-accent" />
             <span className="text-xs font-medium tracking-[0.1em] uppercase text-accent font-heading">
@@ -94,7 +94,7 @@ export default function Resume() {
     <Section id="resume">
       <SectionHeading label="Experience" title="Education & Career" />
 
-      <div className="grid md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+      <div className="grid md:grid-cols-2 gap-12 md:gap-20">
         {/* Education */}
         <div>
           <h3 className="text-sm font-medium tracking-[0.15em] uppercase text-text-secondary mb-8 flex items-center gap-2">
