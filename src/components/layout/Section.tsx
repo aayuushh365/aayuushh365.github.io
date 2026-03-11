@@ -11,7 +11,7 @@ export default function Section({ id, children, className = '', fullWidth = fals
   return (
     <section id={id} className={`py-32 md:py-40 ${className}`}>
       {fullWidth ? children : (
-        <div className="max-w-6xl mx-auto px-6">
+        <div className="max-w-6xl mx-auto px-8 sm:px-12 md:px-16 lg:px-20">
           {children}
         </div>
       )}
