@@ -4,6 +4,7 @@ import Section from '../layout/Section'
 import SectionHeading from '../shared/SectionHeading'
 import AnimatedElement from '../shared/AnimatedElement'
 import ContactForm from './ContactForm'
+import DinqCard from './DinqCard'
 import { socialLinks } from '../../data/social'
 
 const contactInfo = [
@@ -35,6 +36,11 @@ export default function Contact() {
         title="Let's Build Something"
         description="Have a project in mind, a question, or just want to connect? Reach out."
       />
+
+      {/* Dinq Digital Business Card */}
+      <div className="max-w-5xl mx-auto">
+        <DinqCard />
+      </div>
 
       <div className="grid md:grid-cols-5 gap-16 max-w-5xl mx-auto">
         {/* Form */}

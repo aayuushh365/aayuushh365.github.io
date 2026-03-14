@@ -148,4 +148,17 @@ export const projects: Project[] = [
     featured: false,
     tags: ['Product Strategy', 'UX Research', 'LinkedIn'],
   },
+  {
+    id: 'duolingo-case-study',
+    title: 'How Duolingo Broke Its Own Product',
+    category: 'case-study',
+    subcategory: 'Product Case Study',
+    description: "A deep-dive into Duolingo's behavioral architecture — the Hook Model, streak psychology, and variable rewards that built 40M daily users — and how the 2025 AI-first pivot quietly shattered the emotional contract that held it all together. Includes a proposed Craft Layer solution to repair community trust.",
+    image: '/images/duolingo-case-study.png',
+    links: {
+      caseStudy: 'https://docs.google.com/presentation/d/1Gtpg-20lLqygaD2tRk5fINeus663ZNDj/edit?usp=drive_link',
+    },
+    featured: true,
+    tags: ['Behavioral Design', 'Hook Model', 'Product Strategy', 'UX Research', 'Duolingo'],
+  },
 ]
