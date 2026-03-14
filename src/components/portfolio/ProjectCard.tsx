@@ -24,14 +24,16 @@ export default function ProjectCard({ project, onClick }: ProjectCardProps) {
         {isFeatured ? (
           /* Featured: horizontal layout */
           <div className="grid md:grid-cols-2 h-full">
-            <div className="relative overflow-hidden aspect-video md:aspect-auto">
+            <div className={`relative overflow-hidden aspect-video md:aspect-auto ${project.category === 'case-study' ? 'bg-[#58CC02]' : ''}`}>
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                className={`w-full h-full transition-transform duration-500 group-hover:scale-105 ${project.category === 'case-study' ? 'object-contain p-4' : 'object-cover'}`}
                 loading="lazy"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary/60 to-transparent md:bg-gradient-to-r" />
+              {project.category !== 'case-study' && (
+                <div className="absolute inset-0 bg-gradient-to-t from-bg-secondary/60 to-transparent md:bg-gradient-to-r" />
+              )}
             </div>
             <div className="p-7 md:p-9 flex flex-col justify-center">
               <Badge variant="filled" className="mb-4 self-start">
