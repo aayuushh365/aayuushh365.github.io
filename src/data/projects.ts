@@ -17,6 +17,21 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: 'sponsight',
+    title: 'Sponsight: Targeting Intelligence for International Students',
+    category: 'technical',
+    subcategory: 'Product Innovation & Management',
+    description: 'A targeting intelligence tool that helps international students find STEM-OPT-friendly companies and decision-makers, turning a noisy job search into a prioritized outreach list backed by sponsorship and hiring signals.',
+    image: '/images/sponsight-logo.svg',
+    links: {
+      live: 'https://sponsight.streamlit.app/',
+      github: 'https://github.com/aayuushh365/sponsight',
+      documentation: 'https://www.notion.so/Targeting-Intelligence-Tool-for-International-Students-PM-Portfolio-Case-Study-322a000f28da8133b857d8b8eabf5540?source=copy_link',
+    },
+    featured: true,
+    tags: ['Streamlit', 'Python', 'Product Strategy', 'Job Search'],
+  },
+  {
     id: 'sprintsense',
     title: 'SprintSense: The Agile Dashboard',
     category: 'technical',
